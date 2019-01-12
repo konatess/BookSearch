@@ -2,8 +2,8 @@ import React from "react";
 
 function Card({ icon, title, children }) {
   return (
-    <div className="card mt-4">
-      <div className="card-header">
+    <div className="card mt-4 bg-dark">
+      <div className="card-header bg-info">
         <h3>
           <strong>
             <i className={`fa fa-${icon}`} aria-hidden="true" /> {title}

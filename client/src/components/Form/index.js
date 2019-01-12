@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css"
 
 function Form({ q, handleInputChange, handleFormSubmit }) {
   return (
@@ -8,11 +9,11 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           <strong>Book</strong>
         </label>
         <input
-          className="form-control"
+          className="form-control text-white"
           id="Title"
           type="text"
           value={q}
-          placeholder="Ready Player One"
+          placeholder="Harry Potter and the Sorcerer's Stone"
           name="q"
           onChange={handleInputChange}
           required
@@ -22,7 +23,7 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
         <button
           onClick={handleFormSubmit}
           type="submit"
-          className="btn btn-lg btn-danger float-right"
+          className="btn btn-lg btn-info float-right"
         >
           Search
         </button>
