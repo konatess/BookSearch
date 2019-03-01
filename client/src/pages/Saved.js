@@ -50,6 +50,7 @@ class Saved extends Component {
                 <List>
                   {this.state.books.map(book => (
                     <Book
+                      className={"text-dark"}
                       key={book._id}
                       title={book.title}
                       subtitle={book.subtitle}
