@@ -85,6 +85,7 @@ class Home extends Component {
                 <List>
                   {this.state.books.map(book => (
                     <Book
+                      className={"text-black"}
                       key={book.id}
                       title={book.volumeInfo.title}
                       subtitle={book.volumeInfo.subtitle}
